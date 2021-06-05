@@ -20,7 +20,7 @@ object Main extends IOApp {
 
   val contact: Json = Json.obj(
     "email" -> Json.fromString("kontakt@maschinendeck.org"),
-    "irc" -> Json.fromString("irc://irc.freenode.net/maschinendeck"),
+    "irc" -> Json.fromString("irc://irc.libera.chat/maschinendeck"),
     "ml" -> Json.fromString("public-subscribe@maschinendeck.org"),
     "twitter" -> Json.fromString("@maschinendeck_"),
     "discord" -> Json.fromString("https://discord.gg/e5xYxA8"),
