@@ -61,3 +61,23 @@ server {
 
 }
 ```
+
+Sample systemd configuration
+
+```
+[Unit]
+Description=SpaceAPI
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+WorkingDirectory=/home/spaceapi
+ExecStart=/usr/bin/java -jar /home/spaceapi/maschinendeck-spaceapi.jar
+User=spaceapi
+Type=simple
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
